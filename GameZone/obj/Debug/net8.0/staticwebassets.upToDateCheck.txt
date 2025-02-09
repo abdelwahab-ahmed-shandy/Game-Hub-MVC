@@ -1,4 +1,3 @@
-wwwroot\assets\images\games\fc411705-a644-4a0d-8733-272ffaad3678.png
 wwwroot\css\bootstrap.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico

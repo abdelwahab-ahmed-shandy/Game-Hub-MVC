@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\01-Projects\\Game Hub-MVC\\Game Hub-MVC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B46B3AB2-C4E6-4C1D-993D-D3244C4B13C9}|GameZone\\Game Hub-MVC.csproj|e:\\01-projects\\game hub-mvc\\game hub-mvc\\gamezone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B46B3AB2-C4E6-4C1D-993D-D3244C4B13C9}|GameZone\\Game Hub-MVC.csproj|solutionrelative:gamezone\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "E:\\4-Git\\Game Hub-MVC\\Game-Hub-MVC\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 595,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\01-Projects\\Game Hub-MVC\\Game Hub-MVC\\GameZone\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GameZone\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\01-Projects\\Game Hub-MVC\\Game Hub-MVC\\GameZone\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GameZone\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T14:41:33.814Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
