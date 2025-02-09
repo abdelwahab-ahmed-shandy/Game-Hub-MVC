@@ -1,0 +1,84 @@
+﻿@model GameZone.ViewModels.CreateGameFormViewModel
+
+
+@{
+	ViewData["Title"] = "Add Game"; 
+}
+<br /> 
+<h5>
+	<i class="bi bi-plus-circle-fill"></i>
+	Add A New Game
+</h5>
+
+<form asp-controller="Games" asp-action="Create" enctype="multipart/form-data">
+	<div class="row">
+		<div class="col-md-5">
+			<div>
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" asp-for ="Name">
+					<label asp-for="Name"></label> 
+					<span asp-validation-for="Name" class="text-danger"></span>
+				</div>
+				<div class="form-floating mb-3">
+					<select class="form-select" asp-for="CategoryId" asp-items="Model.Categories">
+						<option value="">Select Category</option>
+					</select>
+					<label asp-for="CategoryId"></label>
+					<span asp-validation-for="CategoryId" class="text-danger"></span>
+				</div>
+				<div class="form-floating mb-3">
+					<select class="form-select" asp-for="SelectedDevices" asp-items="Model.Devices" style="height: 100px">
+						<option value="">Select Device</option>
+					</select>
+					<label asp-for="SelectedDevices"></label>
+				</div>
+				<div class="form-floating mb-3">
+					
+					<textarea class="form-control " asp-for="Description"></textarea>
+					<label asp-for="Description"></label>
+					<span asp-validation-for="Description" class="text-danger"></span>
+				</div>
+				<div class="form-floating mb-3">
+					<input type="file" class="form-control" asp-for="Cover" 
+						data-rule-extension="@FileSettings.AllowedExtensions.Replace(".", string.Empty)"
+						   data-msg-extension="Not Allowed Extension"
+							data-rule-filesize="@FileSettings.FileMaxSizeInBytes"
+						   data-msg-filesize="Maxinum Allowed Size Is @FileSettings.FileMaxSizeInMB MB">
+					<label asp-for="Cover"></label>
+					<small class="form-text text-muted">Only @FileSettings.AllowedExtensions files are allowed with max size @FileSettings.FileMaxSizeInMB MB</small>
+					<span asp-validation-for="Cover" class="text-danger d-block"></span>
+				</div>
+
+				<button type="submit" class="btn btn-secondary " text-black>Save</button>
+		</div>
+
+
+		<div class="col-md-5">
+				
+		</div>
+	</div>
+</form>
+
+
+@section Scripts
+{
+	<script>
+		$.validator.addMethod('filesize', function (value, element, param) {
+			return this.optional(element) || element.files[0].size <= param;
+		});
+
+		// todo : here 
+		$(document).ready(function ({
+			$('#Cover').on('change', function(){
+
+			});
+
+		
+		}));
+	</script>
+
+	<partial name="_ValidationScriptsPartial"></partial>
+}
+
+
+
